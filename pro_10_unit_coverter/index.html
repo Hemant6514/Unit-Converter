@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Unit Converter</h1>
+            <h2 id="unit-name" class="unit-name"></h2>
+            <div class="icon-contain">
+              <div class="unit-card" data-unit="lengthUnits">
+                  <button class="icon-btn" value="Length">
+                     <i class="fa-solid fa-ruler unit-icon"></i>
+                  </button>
+
+                  <span class="icon-name">Length</span>
+              </div>
+
+              <div class="unit-card" data-unit="timeUnits">
+                    <button class="icon-btn" value="Time">
+                        <i class="fa-solid fa-clock unit-icon"></i>
+                    </button>
+
+                    <span class="icon-name">Time</span>
+              </div>
+
+              <div class="unit-card" data-unit="weightUnits">
+                    <button class="icon-btn" value="Weight">
+                        <i class="fa-solid fa-weight-scale unit-icon"></i>
+                    </button>
+
+                   <span class="icon-name">Weight</span>
+              </div>
+
+              <div class="unit-card" data-unit="dataUnits">
+                    <button class="icon-btn" value="Data">
+                        <i class="fa-solid fa-hard-drive unit-icon"></i>
+                    </button>
+
+                    <span class="icon-name">Data</span>
+              </div>
+
+               <div class="unit-card" data-unit="tempUnits">
+                    <button class="icon-btn" value="Temperature">
+                        <i class="fa-solid fa-temperature-three-quarters unit-icon"></i>
+                    </button>
+
+                    <span class="icon-name">Temperature</span>
+              </div>
+
+            </div>
+        
+            <input type="number" placeholder="Enter Value" id="input-field">
+
+           <div class="dropdown from-dropdown">
+
+                <button class="dropdown-btn">
+                    From Unit
+                    <span>▼</span>
+                </button>
+            
+                <ul class="dropdown-menu from-menu">
+                     
+                </ul>
+
+            </div>
+
+            <div class="dropdown to-dropdown">
+                
+                <button class="dropdown-btn">
+                    To Unit
+                    <span>▼</span>
+                </button>
+            
+                <ul class="dropdown-menu to-menu">
+            
+                    
+                </ul>
+                
+            </div>
+            <button id="convert-btn" class="convert-btn">convert</button>
+
+        
+            <p class="result-box"> Result :- <span id="result">0</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
